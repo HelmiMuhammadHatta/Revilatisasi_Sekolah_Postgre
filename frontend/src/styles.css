@@ -1,0 +1,26 @@
+:root{--bg:#eef2f7;--card:#fff;--muted:#6b7280;--accent:#0ea5e9;--border:#e5e7eb;--shadow:0 8px 20px rgba(14,30,99,.08);}
+*{box-sizing:border-box}html,body,#root{height:100%}body{margin:0;font-family:Inter,ui-sans-serif,system-ui;background:var(--bg);color:#0f172a}
+.app{display:grid;grid-template-columns:88px 1fr;min-height:100vh}
+.sidebar{background:linear-gradient(180deg,#0f172a,#1f2a44);padding:16px 12px;color:#fff;display:flex;flex-direction:column;align-items:center;gap:16px}
+.badge{width:52px;height:52px;border-radius:12px;background:#0ea5e9;display:grid;place-items:center;font-weight:800}
+.navbtn{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,.08);display:grid;place-items:center}
+.content{padding:24px 28px 40px}
+.header h1{margin:0 0 8px 0;font-weight:800}
+.header small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:18px}
+.row2{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:18px}
+.row3{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+.card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:16px}
+.sectionTitle{font-weight:800;margin:0 0 12px 0}
+.mapWrap{height:520px;border-radius:12px;overflow:hidden}
+.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:#f9fafb;border:1px solid var(--border);border-radius:14px;padding:12px}
+.stat h4{margin:0;color:var(--muted);font-size:12px} .stat .val{font-size:24px;font-weight:800;margin-top:6px}
+.tableWrap{max-height:420px;overflow:auto;border:1px solid var(--border);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--border)} th{background:#f9fafb;text-align:left;color:#374151}
+.legend{height:8px;border-radius:999px;background:linear-gradient(90deg,#dbeafe,#1d4ed8);margin-top:10px}
+.marker-dot{width:12px;height:12px;background:#1d4ed8;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.formRow{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+select{padding:8px 10px;border-radius:10px;border:1px solid var(--border);background:#fff}
+@media (max-width:1080px){.grid,.row2{grid-template-columns:1fr}}
